@@ -1,0 +1,236 @@
+body {
+  background-color: #f5f5f5;
+}
+
+.sect-h-100 {
+  min-height: 100vh;
+}
+
+/* Navbar styling */
+.navbar {
+  position: fixed;
+  width: 100%;
+  background-color: #2d2d2d;
+  padding: 10px 0;
+  font-weight: 600;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  color: white;
+}
+
+.navbar a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation links styling */
+.nav-link {
+  position: relative;
+  display: inline-block;
+  padding: 10px 0;
+  transition: color 0.3s ease;
+  color: white;
+}
+
+.nav-link::after {
+  content: "";
+  position: absolute;
+  width: 0;
+  height: 2px;
+  display: block;
+  margin-top: 5px;
+  left: 50%;
+  transform: translateX(-50%);
+  transition: width 0.3s ease;
+  background: #fff;
+  color: white;
+}
+
+.nav-link:hover,
+.navbar-brand:hover,
+.nav-link:focus {
+  color: white;
+}
+
+.nav-link:hover::after,
+.nav-link:focus::after {
+  width: 100%;
+  color: white;
+}
+
+/* Hamburger menu styling */
+.navbar .navbar-toggler-icon {
+  color: white;
+}
+
+/* Right side of the navbar */
+.right {
+  display: flex;
+  gap: 30px;
+  text-transform: uppercase;
+}
+
+.item {
+  transition: transform 0.8s ease-in-out;
+}
+
+/* Hero section styling */
+#hero {
+  height: 100vh;
+  background-color: #1a1a1a;
+  color: white;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#hero h1 {
+  font-size: 4.5rem;
+}
+
+#hero p {
+  font-size: 2rem;
+}
+
+/* Animazione di scrittura */
+@keyframes typing {
+  from { width: 0 }
+  to { width: 100% }
+}
+
+
+.typed {
+  display: inline-block;
+  overflow: hidden;
+  border-right: .15em solid white; /* Simula il cursore di scrittura */
+  white-space: nowrap;
+  margin: 0;
+  padding: 0;
+  animation: typing 2s steps(20, end) infinite, blink-caret .75s step-end infinite; /* Applica le animazioni */
+}
+
+
+
+/* About section styling */
+.shadow {
+  box-shadow: 0px 0px 16px -6px #000000;
+}
+
+#about img {
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: 10% 100%;
+}
+
+.about-img {
+  height: 150px;
+  width: 150px;
+  border-radius: 5px;
+  object-fit: cover;
+  object-position: 10% 100%;
+}
+
+.about-info {
+  text-wrap: balance;
+}
+
+.btn-style {
+  border: 1px solid black;
+  border-radius: 3px;
+  padding: 5px 10px;
+}
+
+.btn-style:hover {
+  text-decoration: underline;
+}
+
+.title-s {
+  font-weight: 600;
+  color: #1e1e1e;
+  font-size: 1.1rem;
+}
+
+.title-box-2 {
+  margin-bottom: 3rem;
+}
+
+.title-left {
+  font-size: 3rem;
+  position: relative;
+}
+
+.title-left:before {
+  content: "";
+  position: absolute;
+  height: 3px;
+  background-color: #0078ff;
+  width: 100px;
+  bottom: -12px;
+}
+
+.skill-mf .progress {
+  background-color: #cde1f8;
+  margin: 0.5rem 0 1.2rem 0;
+  border-radius: 0;
+  height: 0.7rem;
+}
+
+.lead {
+  font-size: 1.25rem;
+  font-weight: 300;
+  text-wrap: balance;
+}
+
+.title-box {
+  margin-bottom: 4rem;
+}
+
+.title-a {
+  font-size: 3rem;
+  text-transform: uppercase;
+  font-weight: bold;
+}
+
+.w-title {
+  font-size: 1.2rem;
+}
+
+.line-mf {
+  border-bottom: 4px solid #0078ff;
+  width: 100px;
+}
+
+#work {
+  padding-top: 70px;
+}
+
+.work-box {
+  border-radius: 1rem;
+}
+
+.w-img {
+  height: 200px;
+  width: 100%;
+  object-fit: cover;
+}
+
+.work-content {
+  padding: 2rem 3% 1rem 4%;
+  background-color: #f1f1f1;
+}
+
+.work-content .w-more {
+  color: #4e4e4e;
+  font-size: 0.8rem;
+}
+
+.w-category {
+  color: #0078ff;
+}
+
+.work-content .w-like {
+  font-size: 2.5rem;
+  color: #0078ff;
+  float: right;
+}
